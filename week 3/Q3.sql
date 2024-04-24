@@ -1,0 +1,10 @@
+#Find the names of suppliers who supply the maximum number of parts.
+SELECT SNAME
+FROM SUPPLIER
+JOIN SELLS ON SUPPLIER.SNO = SELLS.SNO
+GROUP BY SUPPLIER.SNO, SNAME
+ORDER BY COUNT(SELLS.PNO) DESC
+LIMIT 1;
+
+
+

@@ -1,0 +1,12 @@
+CREATE TABLE PART (
+    PNO INT PRIMARY KEY,
+    PNAME VARCHAR(255),
+    PRICE INT
+);
+
+
+INSERT INTO PART (PNO, PNAME, PRICE) VALUES
+(1, 'Screw', 10),
+(2, 'Nut', 8),
+(3, 'Bolt', 15),
+(4, 'Cam', 25);
